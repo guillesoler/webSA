@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Fincas Soler Asesores</title>
+    <meta name="description"
+        content="Administración de Fincas y Seguros en Xàtiva. Soler Asesores, tu empresa de confianza para la gestión integral de comunidades y seguros.">
+
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-building"></i>
+                Soler Asesores SL
+            </div>
+            <nav class="nav">
+                <ul id="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="tel:600883044" class="contact-btn">
+                <i class="fas fa-phone"></i>
+                Llamar
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="hero-text fade-in-up">
+                <h1>Administración de <span class="highlight">Fincas y Seguros</span></h1>
+                <p>Profesionales con más de 50 años de experiencia gestionando comunidades en Xàtiva con la máxima
+                    profesionalidad y confianza. Solicita presupuesto sin compromiso.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Solicitar Información
+                    </a>
+                    <a href="#servicios" class="btn-secondary">
+                        <i class="fas fa-arrow-down"></i>
+                        Ver Servicios
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-up">
+                <div class="floating-card">
+                    <div class="contact-info-hero">
+                        <h3>Contacta Ahora</h3>
+                        <div class="contact-item-hero">
+                            <i class="fas fa-phone"></i>
+                            <span>962 273 523 / 600 883 044</span>
+                        </div>
+                        <div class="contact-item-hero">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pasaje Moncada, 3º Piso Derecha<br>Xàtiva, Valencia</span>
+                        </div>
+                        <div class="contact-item-hero">
+                            <i class="fas fa-clock"></i>
+                            <span>Lun-Vie: 9:00-13:00 / 16:30-18:30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2>Nuestros Servicios</h2>
+                <p>Ofrecemos una gama completa de servicios profesionales para la gestión de tu comunidad y la
+                    protección de tus bienes</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Administración de Fincas</h3>
+                    <p>Gestión integral de comunidades de propietarios con transparencia total. Profesionales con más de
+                        50 años
+                        cuidando de tu comunidad como si fuera nuestra.</p>
+                </div>
+                <div class="service-item fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Seguros Generales</h3>
+                    <p>Amplio catálogo de seguros: hogar, vida, auto, comercio y comunidades. Te ayudamos a encontrar la
+                        mejor cobertura adaptada a tus necesidades específicas.</p>
+                </div>
+                <div class="service-item fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Asesoría Fiscal</h3>
+                    <p>Asesoramiento fiscal especializado para particulares y empresas. Declaraciones de renta,
+                        planificación fiscal y optimización tributaria con abogado especializado.</p>
+                </div>
+                <div class="service-item fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Asesoría Laboral</h3>
+                    <p>Gestión integral de recursos humanos con asesoramiento legal. Nóminas, contratos, seguros
+                        sociales y resolución de conflictos laborales.</p>
+                </div>
+                <div class="service-item fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Asesoría Civil</h3>
+                    <p>Abogado especializado en derecho civil, propiedad horizontal y gestión de conflictos. Contratos,
+                        morosos y todo tipo de incidencias civiles.</p>
+                </div>
+                <div class="service-item fade-in-up">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Atención 24/7</h3>
+                    <p>Servicio de atención personalizada y disponibilidad total. Resolvemos cualquier duda o emergencia
+                        de manera rápida, eficaz y profesional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in-up">
+                    <h2>Profesionales con Más de 50 Años de Experiencia</h2>
+                    <p>Soler Asesores nació con la vocación de ofrecer un servicio integral y personalizado en la
+                        administración de fincas y seguros. Nos hemos consolidado como la empresa de referencia en
+                        Xàtiva y toda la comarca. Solicita presupuesto sin compromiso.</p>
+                    <p>Nuestro equipo de profesionales cualificados, incluyendo abogado especializado en temas fiscales,
+                        laborales y civiles, combina la experiencia tradicional con las últimas tecnologías,
+                        garantizando una gestión moderna, transparente y eficiente.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Profesionales con más de 50 años de experiencia en el
+                            sector</li>
+                        <li><i class="fas fa-check-circle"></i> Equipo profesional colegiado con abogado especializado
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> Asesoramiento legal en fiscal, laboral y civil</li>
+                        <li><i class="fas fa-check-circle"></i> Tecnología avanzada de gestión y comunicación</li>
+                        <li><i class="fas fa-check-circle"></i> Atención personalizada y servicio 24/7</li>
+                        <li><i class="fas fa-check-circle"></i> Transparencia absoluta en toda la gestión</li>
+                        <li><i class="fas fa-check-circle"></i> Presupuestos sin compromiso</li>
+                    </ul>
+                </div>
+                <div class="about-visual fade-in-up">
+                    <div class="visual-element">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info fade-in-up">
+                    <h2>Contacta con Nosotros</h2>
+                    <p style="margin-bottom: 2rem; opacity: 0.9;">Estamos aquí para ayudarte. Ponte en contacto con
+                        nosotros y te atenderemos de forma personalizada.</p>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Nuestra Oficina</h4>
+                            <p>Pasaje Moncada, 3º Piso Derecha<br>46800 XÀTIVA<br>Valencia/València</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfonos</h4>
+                            <p>962 273 523<br>600 883 044</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>admonfincasoler@hotmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario de Atención</h4>
+                            <p>Lunes a Viernes: 9:00-13:00 / 16:30-18:30<br>Sábados y Domingos: Solo emergencias</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form fade-in-up">
+                    <h3>¿Necesitas más información?</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre completo *</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Tu número de teléfono">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Servicio de interés</label>
+                            <select id="service" name="service">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="administracion">Administración de Fincas</option>
+                                <option value="seguros">Seguros Generales</option>
+                                <option value="fiscal">Asesoría Fiscal</option>
+                                <option value="laboral">Asesoría Laboral</option>
+                                <option value="civil">Asesoría Civil</option>
+                                <option value="presupuesto">Solicitar Presupuesto</option>
+                                <option value="emergencia">Emergencia</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" required
+                                placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Consulta
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Soler Asesores SL</h3>
+                    <p>Administración de Fincas y Seguros en Xàtiva. Profesionales con más de 50 años de experiencia. Tu
+                        empresa de confianza
+                        para la gestión integral de comunidades con asesoramiento legal especializado. Presupuestos sin
+                        compromiso.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios Principales</h3>
+                    <ul>
+                        <li><a href="#servicios">Administración de Fincas</a></li>
+                        <li><a href="#servicios">Seguros Generales</a></li>
+                        <li><a href="#servicios">Asesoría Fiscal</a></li>
+                        <li><a href="#servicios">Asesoría Laboral</a></li>
+                        <li><a href="#servicios">Asesoría Civil</a></li>
+                        <li><a href="#contacto">Presupuestos sin compromiso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Información de Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt" style="color: #d4af37; margin-right: 0.5rem;"></i>
+                        Pasaje Moncada, 3º Piso Derecha</p>
+                    <p style="margin-left: 1.2rem;">46800 Xàtiva, Valencia</p>
+                    <p><i class="fas fa-phone" style="color: #d4af37; margin-right: 0.5rem;"></i>
+                        962 273 523 / 600 883 044</p>
+                    <p><i class="fas fa-envelope" style="color: #d4af37; margin-right: 0.5rem;"></i>
+                        admonfincasoler@hotmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Horarios de Atención</h3>
+                    <p><strong>Lunes a Viernes:</strong><br>9:00-13:00 / 16:30-18:30</p>
+                    <p><strong>Sábados y Domingos:</strong><br>Solo emergencias</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Soler Asesores SL - Administración de Fincas y Seguros. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <div class="floating-contact">
+        <button class="floating-btn" onclick="window.location.href='tel:600883044'" title="Llamar ahora">
+            <i class="fas fa-phone"></i>
+        </button>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
